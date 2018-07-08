@@ -9,3 +9,14 @@ D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.BLL\bin\Release\EntityFramework.xml
 D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.BLL\obj\Release\ThoughtPool.EMS.BLL.csprojResolveAssemblyReference.cache
 D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.BLL\obj\Release\ThoughtPool.EMS.BLL.dll
 D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.BLL\obj\Release\ThoughtPool.EMS.BLL.pdb
+D:\Thoughtpool\ThoughtPool.EMS.BLL\bin\Release\ThoughtPool.EMS.BLL.dll
+D:\Thoughtpool\ThoughtPool.EMS.BLL\bin\Release\ThoughtPool.EMS.BLL.pdb
+D:\Thoughtpool\ThoughtPool.EMS.BLL\bin\Release\ThoughtPool.EMS.DAL.dll
+D:\Thoughtpool\ThoughtPool.EMS.BLL\bin\Release\ThoughtPool.EMS.Domain.dll
+D:\Thoughtpool\ThoughtPool.EMS.BLL\bin\Release\EntityFramework.dll
+D:\Thoughtpool\ThoughtPool.EMS.BLL\bin\Release\ThoughtPool.EMS.DAL.pdb
+D:\Thoughtpool\ThoughtPool.EMS.BLL\bin\Release\ThoughtPool.EMS.Domain.pdb
+D:\Thoughtpool\ThoughtPool.EMS.BLL\bin\Release\EntityFramework.xml
+D:\Thoughtpool\ThoughtPool.EMS.BLL\obj\Release\ThoughtPool.EMS.BLL.csprojResolveAssemblyReference.cache
+D:\Thoughtpool\ThoughtPool.EMS.BLL\obj\Release\ThoughtPool.EMS.BLL.dll
+D:\Thoughtpool\ThoughtPool.EMS.BLL\obj\Release\ThoughtPool.EMS.BLL.pdb

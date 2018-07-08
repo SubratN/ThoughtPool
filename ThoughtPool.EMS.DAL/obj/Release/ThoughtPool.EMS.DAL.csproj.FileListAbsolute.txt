@@ -10,3 +10,15 @@ D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.DAL\bin\Release\EntityFramework.SqlSer
 D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.DAL\obj\Release\ThoughtPool.EMS.DAL.csprojResolveAssemblyReference.cache
 D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.DAL\obj\Release\ThoughtPool.EMS.DAL.dll
 D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.DAL\obj\Release\ThoughtPool.EMS.DAL.pdb
+D:\Thoughtpool\ThoughtPool.EMS.DAL\bin\Release\ThoughtPool.EMS.DAL.dll.config
+D:\Thoughtpool\ThoughtPool.EMS.DAL\bin\Release\ThoughtPool.EMS.DAL.dll
+D:\Thoughtpool\ThoughtPool.EMS.DAL\bin\Release\ThoughtPool.EMS.DAL.pdb
+D:\Thoughtpool\ThoughtPool.EMS.DAL\bin\Release\EntityFramework.dll
+D:\Thoughtpool\ThoughtPool.EMS.DAL\bin\Release\EntityFramework.SqlServer.dll
+D:\Thoughtpool\ThoughtPool.EMS.DAL\bin\Release\ThoughtPool.EMS.Domain.dll
+D:\Thoughtpool\ThoughtPool.EMS.DAL\bin\Release\ThoughtPool.EMS.Domain.pdb
+D:\Thoughtpool\ThoughtPool.EMS.DAL\bin\Release\EntityFramework.xml
+D:\Thoughtpool\ThoughtPool.EMS.DAL\bin\Release\EntityFramework.SqlServer.xml
+D:\Thoughtpool\ThoughtPool.EMS.DAL\obj\Release\ThoughtPool.EMS.DAL.csprojResolveAssemblyReference.cache
+D:\Thoughtpool\ThoughtPool.EMS.DAL\obj\Release\ThoughtPool.EMS.DAL.dll
+D:\Thoughtpool\ThoughtPool.EMS.DAL\obj\Release\ThoughtPool.EMS.DAL.pdb

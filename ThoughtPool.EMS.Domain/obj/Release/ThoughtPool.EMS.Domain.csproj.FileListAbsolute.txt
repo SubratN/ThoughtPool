@@ -7,3 +7,13 @@ D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.Domain\bin\Release\EntityFramework.xml
 D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.Domain\bin\Release\EntityFramework.SqlServer.xml
 D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.Domain\obj\Release\ThoughtPool.EMS.Domain.dll
 D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.Domain\obj\Release\ThoughtPool.EMS.Domain.pdb
+D:\Thoughtpool\ThoughtPool.EMS.Domain\bin\Release\ThoughtPool.EMS.Domain.dll.config
+D:\Thoughtpool\ThoughtPool.EMS.Domain\bin\Release\ThoughtPool.EMS.Domain.dll
+D:\Thoughtpool\ThoughtPool.EMS.Domain\bin\Release\ThoughtPool.EMS.Domain.pdb
+D:\Thoughtpool\ThoughtPool.EMS.Domain\bin\Release\EntityFramework.dll
+D:\Thoughtpool\ThoughtPool.EMS.Domain\bin\Release\EntityFramework.SqlServer.dll
+D:\Thoughtpool\ThoughtPool.EMS.Domain\bin\Release\EntityFramework.xml
+D:\Thoughtpool\ThoughtPool.EMS.Domain\bin\Release\EntityFramework.SqlServer.xml
+D:\Thoughtpool\ThoughtPool.EMS.Domain\obj\Release\ThoughtPool.EMS.Domain.csprojResolveAssemblyReference.cache
+D:\Thoughtpool\ThoughtPool.EMS.Domain\obj\Release\ThoughtPool.EMS.Domain.dll
+D:\Thoughtpool\ThoughtPool.EMS.Domain\obj\Release\ThoughtPool.EMS.Domain.pdb
