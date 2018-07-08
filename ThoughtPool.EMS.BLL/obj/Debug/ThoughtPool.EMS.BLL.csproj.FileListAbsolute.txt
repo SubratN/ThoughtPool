@@ -1,0 +1,11 @@
+D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.BLL\obj\Debug\ThoughtPool.EMS.BLL.csprojResolveAssemblyReference.cache
+D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.BLL\bin\Debug\ThoughtPool.EMS.BLL.dll
+D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.BLL\bin\Debug\ThoughtPool.EMS.BLL.pdb
+D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.BLL\bin\Debug\ThoughtPool.EMS.DAL.dll
+D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.BLL\bin\Debug\ThoughtPool.EMS.Domain.dll
+D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.BLL\bin\Debug\EntityFramework.dll
+D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.BLL\bin\Debug\ThoughtPool.EMS.DAL.pdb
+D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.BLL\bin\Debug\ThoughtPool.EMS.Domain.pdb
+D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.BLL\bin\Debug\EntityFramework.xml
+D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.BLL\obj\Debug\ThoughtPool.EMS.BLL.dll
+D:\WebAPIDemo\ThoughtPool\ThoughtPool.EMS.BLL\obj\Debug\ThoughtPool.EMS.BLL.pdb
