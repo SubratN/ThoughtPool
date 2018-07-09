@@ -10,6 +10,7 @@ namespace ThoughtPool.EMS.DAL
     public interface IEmployeeDAL
     {
         List<Employee> GetEmployees();
+        Employee GetEmployee(int id);
         Employee GetEmployee(int id, int month, int year);
         void UpdateAttendance(int id, Attendance att);
     }

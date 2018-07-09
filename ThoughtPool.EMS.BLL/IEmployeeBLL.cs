@@ -11,6 +11,7 @@ namespace ThoughtPool.EMS.BLL
     public interface IEmployeeBLL
     {
         List<EmployeeModel> GetEmployees();
+        EmployeeModel GetEmployee(int id);
         EmployeeModel GetEmployeeById(int id, int month, int year);
         void UpdateAttendance(int id, BusinessModel.Attendance attdetails);
     }

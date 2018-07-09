@@ -35,6 +35,18 @@ namespace ThoughtPool.EMS.BLL
             }
             return employeeModel;
         }
+        public EmployeeModel GetEmployee(int id)
+        {
+            var emp = objDal.GetEmployee(id);
+            EmployeeModel employeeModel = new EmployeeModel()
+            {
+                Firstname = emp.Firstname,
+                Designation = emp.Designation,
+                Email = emp.Email,
+                Contactno = emp.Contactno
+            };
+            return employeeModel;
+        }
 
         public EmployeeModel GetEmployeeById(int id, int month, int year)
         {

@@ -18,6 +18,11 @@ namespace ThoughtPool.EMS.DAL
             return context.Employees.Where(x => x.StatusId == 1).ToList();
 
         }
+        public Employee GetEmployee(int id)
+        {
+            ManageAttendanceContext context = new ManageAttendanceContext();
+            return context.Employees.Where(x => x.Empid == id).FirstOrDefault();
+        }
         public Employee GetEmployee(int id, int month, int year)
         {
             ManageAttendanceContext context = new ManageAttendanceContext();
