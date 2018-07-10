@@ -14,7 +14,7 @@ namespace ThoughtPool.EMS.Domain.Models.Mapping
             this.Property(t => t.Empid)
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
 
-            this.Property(t => t.Firstname)
+            this.Property(t => t.Name)
                 .HasMaxLength(50);
 
             this.Property(t => t.Designation)
@@ -26,7 +26,7 @@ namespace ThoughtPool.EMS.Domain.Models.Mapping
             // Table & Column Mappings
             this.ToTable("Employee");
             this.Property(t => t.Empid).HasColumnName("Empid");
-            this.Property(t => t.Firstname).HasColumnName("Firstname");
+            this.Property(t => t.Name).HasColumnName("Name");
             this.Property(t => t.Designation).HasColumnName("Designation");
             this.Property(t => t.Contactno).HasColumnName("Contactno");
             this.Property(t => t.Email).HasColumnName("Email");

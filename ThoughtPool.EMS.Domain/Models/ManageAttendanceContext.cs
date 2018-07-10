@@ -18,6 +18,7 @@ namespace ThoughtPool.EMS.Domain.Models
 
         public DbSet<Attendance> Attendances { get; set; }
         public DbSet<AttendanceStatu> AttendanceStatus { get; set; }
+        public DbSet<Date> Dates { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<EmployeeStatu> EmployeeStatus { get; set; }
 
@@ -25,6 +26,7 @@ namespace ThoughtPool.EMS.Domain.Models
         {
             modelBuilder.Configurations.Add(new AttendanceMap());
             modelBuilder.Configurations.Add(new AttendanceStatuMap());
+            modelBuilder.Configurations.Add(new DateMap());
             modelBuilder.Configurations.Add(new EmployeeMap());
             modelBuilder.Configurations.Add(new EmployeeStatuMap());
         }

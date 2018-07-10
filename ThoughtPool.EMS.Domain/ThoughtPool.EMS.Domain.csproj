@@ -53,11 +53,13 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Models\Attendance.cs" />
     <Compile Include="Models\AttendanceStatu.cs" />
+    <Compile Include="Models\Date.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\EmployeeStatu.cs" />
     <Compile Include="Models\ManageAttendanceContext.cs" />
     <Compile Include="Models\Mapping\AttendanceMap.cs" />
     <Compile Include="Models\Mapping\AttendanceStatuMap.cs" />
+    <Compile Include="Models\Mapping\DateMap.cs" />
     <Compile Include="Models\Mapping\EmployeeMap.cs" />
     <Compile Include="Models\Mapping\EmployeeStatuMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

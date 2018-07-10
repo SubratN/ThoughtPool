@@ -18,6 +18,7 @@ namespace ThoughtPool.EMS.Domain.Models.Mapping
             this.Property(t => t.InTime).HasColumnName("InTime");
             this.Property(t => t.OutTime).HasColumnName("OutTime");
             this.Property(t => t.StatusId).HasColumnName("StatusId");
+            this.Property(t => t.Day).HasColumnName("Day");
 
             // Relationships
             this.HasOptional(t => t.AttendanceStatu)

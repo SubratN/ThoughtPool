@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using ThoughtPool.EMS.BLL.BusinessModel;
 using ThoughtPool.EMS.DAL;
-using ThoughtPool.EMS.Domain;
 
 namespace ThoughtPool.EMS.BLL
 {
@@ -25,7 +24,7 @@ namespace ThoughtPool.EMS.BLL
                 employeeModel.Add(new EmployeeModel
                 {
                     Empid = item.Empid,
-                    Firstname = item.Firstname,
+                    Name = item.Name,
                     Designation = item.Designation,
                     Email = item.Email,
                     Contactno = item.Contactno,
@@ -40,7 +39,7 @@ namespace ThoughtPool.EMS.BLL
             var emp = objDal.GetEmployee(id);
             EmployeeModel employeeModel = new EmployeeModel()
             {
-                Firstname = emp.Firstname,
+                Name = emp.Name,
                 Designation = emp.Designation,
                 Email = emp.Email,
                 Contactno = emp.Contactno
@@ -54,42 +53,66 @@ namespace ThoughtPool.EMS.BLL
             EmployeeModel employeeModels = new EmployeeModel()
             {
                 Empid = employees.Empid,
-                Firstname = employees.Firstname,
+                Name = employees.Name,
                 Designation = employees.Designation,
                 Contactno = employees.Contactno,
                 Email = employees.Email,
             };
 
-            employeeModels.attendances = new List<Attendance>();
-            foreach (var att in employees.Attendances)
+            employeeModels.attendances = new List<BusinessModel.Attendance>();
+            var dates = GetDates(year, month);
+
+            foreach (var day in dates)
             {
-                employeeModels.attendances.Add(new Attendance
+                BusinessModel.Attendance objAtt = new BusinessModel.Attendance();
+                objAtt.Date = day.Date;
+                var attendanceDetail = employees.Attendances.Where(x => x.Day == day).FirstOrDefault();
+                if (attendanceDetail != null)
                 {
-                    AttendanceId = att.AttendanceId,
-                    InTime = Convert.ToDateTime(att.InTime).ToShortTimeString(),
-                    OutTime = Convert.ToDateTime(att.OutTime).ToShortTimeString(),
-                    Date = Convert.ToDateTime(Convert.ToDateTime(att.InTime).ToShortDateString()),
-                    StatusId= att.AttendanceStatu.StatusId,
-                    StatusCode=att.AttendanceStatu.StatusCode
-                });
+
+                    objAtt.AttendanceId = attendanceDetail.AttendanceId;
+                    objAtt.InTime = attendanceDetail.InTime;
+                    objAtt.OutTime = attendanceDetail.OutTime;
+                    objAtt.StatusId = attendanceDetail.AttendanceStatu.StatusId;
+                    objAtt.StatusCode = attendanceDetail.AttendanceStatu.StatusCode;
+                }
+                employeeModels.attendances.Add(objAtt);
             }
+
             return employeeModels;
         }
-        public void UpdateAttendance(int id, Attendance attdetails)
-        {
-           // if (attdetails.C_Status == "P" || attdetails.C_Status == "A" || attdetails.C_Status == "L" || attdetails.C_Status == "LP")
-            {
-                Domain.Models.Attendance obj = new Domain.Models.Attendance()
-                {
 
-                    //Intime = attdetails.Intime,
-                    //Outtime = attdetails.Outtime,
-                    //C_Date = attdetails.C_Date,
-                    // C_Status = attdetails.C_Status
-                };
-                objDal.UpdateAttendance(id, obj);
+        public void UpdateAttendance(List<Attendance> attdetails)
+        {
+            List<Domain.Models.Attendance> att = new List<Domain.Models.Attendance>();
+
+            foreach (var item in attdetails)
+            {
+                att.Add(new Domain.Models.Attendance()
+                {
+                    AttendanceId = item.AttendanceId,
+                    InTime = item.InTime,
+                    OutTime = item.OutTime,
+                    Day = item.Date,
+                    StatusId = item.StatusId
+                });
+            }
+            objDal.UpdateAttendance(att);
+        }
+
+        public List<DateTime> GetDates(int year, int month)
+        {
+            var dates = new List<DateTime>();
+
+            // Loop from the first day of the month until we hit the next month, moving forward a day at a time
+            for (var date = new DateTime(year, month, 1);
+                date.Month == month;
+                date = date.AddDays(1))
+            {
+                dates.Add(date);
             }
 
+            return dates;
         }
     }
 }

@@ -9,12 +9,12 @@ namespace ThoughtPool.EMS.BLL.BusinessModel
 {
     public class Attendance
     {
-        public string InTime { get; set; }
-        public string OutTime { get; set; }
+        public TimeSpan? InTime { get; set; }
+        public TimeSpan? OutTime { get; set; }
         public string StatusCode { get; set; }
         public int StatusId { get; set; }
         public int AttendanceId { get; set; }
-        public Nullable<System.DateTime> Date { get; set; }
+        public DateTime Date { get; set; }
         
     }
 }

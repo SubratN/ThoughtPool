@@ -27,28 +27,33 @@ namespace ThoughtPool.EMS.DAL
         {
             ManageAttendanceContext context = new ManageAttendanceContext();
             var empDetails = context.Employees.Where(x => x.Empid == id).FirstOrDefault();
-            empDetails.Attendances = empDetails.Attendances.Where(y => y.InTime.Value.Month == month && y.InTime.Value.Year == year
-                                                                     && y.OutTime.Value.Month == month && y.OutTime.Value.Year == year).ToList();
-
+            empDetails.Attendances = empDetails.Attendances.Where(y => y.Day.Value.Month == month && y.Day.Value.Year == year).ToList();
 
             return empDetails;
         }
-        public void UpdateAttendance(int id, Attendance att)
+        public void UpdateAttendance(List<Attendance> att)
         {
-            using (var context = new ManageAttendanceContext())
+            ManageAttendanceContext context = new ManageAttendanceContext();
+            foreach (var item in att)
             {
-                // var db = context.Attendances.FirstOrDefault(x => x.Empid == id);
-                // if (db != null)
+              var attObject=  context.Attendances.Where(x => x.AttendanceId == item.AttendanceId).FirstOrDefault();
+                if (attObject!=null)
                 {
-
-                    // db.Intime = att.Intime;
-                    //db.Outtime = att.Outtime;
-                    //db.C_Date = att.C_Date;
-                    //db.C_Status = att.C_Status;
-                    context.SaveChanges();
-
+                    attObject.StatusId = item.StatusId;
+                    attObject.InTime = item.InTime;
+                    attObject.OutTime = item.OutTime;
+                    context.Attendances.Attach(attObject);
+                    context.Entry(attObject).State = EntityState.Modified;
+                }
+                else
+                {
+                    context.Attendances.Add(item);
                 }
             }
+            
+
+            context.SaveChanges();
+
         }
     }
 }
